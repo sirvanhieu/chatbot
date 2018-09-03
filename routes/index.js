@@ -131,7 +131,7 @@ router.post('/facebook', function (req, res, next) {
 
 					} else if (messagingEvent.postback && messagingEvent.postback.payload == 'POST_INFO') {
 						client.sendSenderAction(senderID, 'typing_on');
-						client.sendImage(senderID, 'https://botjapan.herokuapp.com/images/ftt.png').then(() => {
+						client.sendImage(senderID, 'https://sirhieu.herokuapp.com/images/ftt.png').then(() => {
 							client.sendText(senderID, 'Bạn hiểu chưa nhỉ? Mình cùng tiếp tục nhé', {
 								quick_replies: [{
 									content_type: 'text',
@@ -143,7 +143,7 @@ router.post('/facebook', function (req, res, next) {
 
 					} else if (messagingEvent.postback && messagingEvent.postback.payload == 'POST_RULE') {
 						client.sendSenderAction(senderID, 'typing_on');
-						client.sendImage(senderID, 'https://botjapan.herokuapp.com/images/ftl.jpg').then(() => {
+						client.sendImage(senderID, 'https://sirhieu.herokuapp.com/images/ftl.jpg').then(() => {
 							client.sendText(senderID, 'Bạn hiểu chưa nhỉ? Mình cùng tiếp tục nhé', {
 								quick_replies: [{
 									content_type: 'text',
@@ -160,15 +160,15 @@ router.post('/facebook', function (req, res, next) {
 						client.sendGenericTemplate(
 							senderID, [{
 								title: 'THÔNG TIN',
-								image_url: 'https://botjapan.herokuapp.com/images/tt.jpg',
+								image_url: 'https://sirhieu.herokuapp.com/images/tt.jpg',
 								subtitle: 'Thông tin cuộc thi',
 								default_action: {
 									type: 'web_url',
-									url: 'https://botjapan.herokuapp.com/images/tt.jpg',
+									url: 'https://sirhieu.herokuapp.com/images/tt.jpg',
 									messenger_extensions: true,
 									webview_height_ratio: 'tall',
 									fallback_url: '',
-									/*'https://botjapan.herokuapp.com/',*/
+									/*'https://sirhieu.herokuapp.com/',*/
 								},
 								buttons: [{
 									type: 'postback',
@@ -181,64 +181,64 @@ router.post('/facebook', function (req, res, next) {
 								}, ],
 							}, {
 								title: 'GỬI BÀI THI',
-								image_url: 'https://botjapan.herokuapp.com/images/gb.jpg',
+								image_url: 'https://sirhieu.herokuapp.com/images/gb.jpg',
 								subtitle: 'Gửi ảnh dự thi',
 								default_action: {
 									type: 'web_url',
-									url: 'https://botjapan.herokuapp.com/images/gb.jpg',
+									url: 'https://sirhieu.herokuapp.com/images/gb.jpg',
 									messenger_extensions: true,
 									webview_height_ratio: 'tall',
 									fallback_url: '',
-									/*'https://botjapan.herokuapp.com/',*/
+									/*'https://sirhieu.herokuapp.com/',*/
 								},
 								buttons: [{
 									title: 'Đăng ký',
 									type: 'web_url',
-									url: 'https://botjapan.herokuapp.com/register.html?psid=' + senderID,
+									url: 'https://sirhieu.herokuapp.com/register.html?psid=' + senderID,
 									messenger_extensions: true,
 									webview_height_ratio: 'tall',
-									fallback_url: 'https://botjapan.herokuapp.com/register.html?psid=' + senderID,
+									fallback_url: 'https://sirhieu.herokuapp.com/register.html?psid=' + senderID,
 								}, {
 									title: 'Gửi ảnh',
 									type: 'web_url',
-									url: 'https://botjapan.herokuapp.com/iproducts.html?psid=' + senderID,
+									url: 'https://sirhieu.herokuapp.com/iproducts.html?psid=' + senderID,
 									messenger_extensions: true,
 									webview_height_ratio: 'tall',
-									fallback_url: 'https://botjapan.herokuapp.com/iproducts.html?psid=' + senderID,
+									fallback_url: 'https://sirhieu.herokuapp.com/iproducts.html?psid=' + senderID,
 								}, {
 									title: 'Quản lý ảnh',
 									type: 'web_url',
-									url: 'https://botjapan.herokuapp.com/qla.html?psid=' + senderID,
+									url: 'https://sirhieu.herokuapp.com/qla.html?psid=' + senderID,
 									messenger_extensions: true,
 									webview_height_ratio: 'tall',
-									fallback_url: 'https://botjapan.herokuapp.com/qla.html?psid=' + senderID,
+									fallback_url: 'https://sirhieu.herokuapp.com/qla.html?psid=' + senderID,
 								}, ],
 							}, {
 								title: 'BÌNH CHỌN',
-								image_url: 'https://botjapan.herokuapp.com/images/bc.jpg',
+								image_url: 'https://sirhieu.herokuapp.com/images/bc.jpg',
 								subtitle: 'Bình chọn ảnh đẹp',
 								default_action: {
 									type: 'web_url',
-									url: 'https://botjapan.herokuapp.com/images/bc.jpg',
+									url: 'https://sirhieu.herokuapp.com/images/bc.jpg',
 									messenger_extensions: true,
 									webview_height_ratio: 'tall',
 									fallback_url: '',
-									/*'https://botjapan.herokuapp.com/',*/
+									/*'https://sirhieu.herokuapp.com/',*/
 								},
 								buttons: [{
 									title: 'Bình chọn',
 									type: 'web_url',
-									url: 'https://botjapan.herokuapp.com/vote.html?psid=' + senderID,
+									url: 'https://sirhieu.herokuapp.com/vote.html?psid=' + senderID,
 									messenger_extensions: true,
 									webview_height_ratio: 'tall',
-									fallback_url: 'https://botjapan.herokuapp.com/vote.html?psid=' + senderID,
+									fallback_url: 'https://sirhieu.herokuapp.com/vote.html?psid=' + senderID,
 								}, {
 									title: 'Bảng xếp hạng',
 									type: 'web_url',
-									url: 'https://botjapan.herokuapp.com/ranktbl.html?psid=' + senderID,
+									url: 'https://sirhieu.herokuapp.com/ranktbl.html?psid=' + senderID,
 									messenger_extensions: true,
 									webview_height_ratio: 'tall',
-									fallback_url: 'https://botjapan.herokuapp.com/ranktbl.html?psid=' + senderID,
+									fallback_url: 'https://sirhieu.herokuapp.com/ranktbl.html?psid=' + senderID,
 								}, ],
 							}, ], {
 								image_aspect_ratio: 'square'
@@ -336,10 +336,10 @@ router.post('/registerspostback', upload.single('somefile'), (req, res) => {
 			var returnMessage = "Tuyệt vời! Dưới đây là thông tin đầy đủ của bạn nhé:" + "\n" + "- Thí sinh: " + body.Name + "\n" + "- Sinh ngày: " + body.Birthday + "\n" + "- Số điện thoại: " + body.Phone + "\n" + "- Email: " + body.Email + "\n" + "Đúng chưa nhỉ?";
 			client.sendButtonTemplate(body.psid, returnMessage, [{
 				type: 'web_url',
-				url: 'https://botjapan.herokuapp.com/register.html?psid=' + body.psid,
+				url: 'https://sirhieu.herokuapp.com/register.html?psid=' + body.psid,
 				messenger_extensions: true,
 				webview_height_ratio: 'tall',
-				fallback_url: 'https://botjapan.herokuapp.com/register.html?psid=' + body.psid,
+				fallback_url: 'https://sirhieu.herokuapp.com/register.html?psid=' + body.psid,
 				title: 'Điền lại',
 			}, {
 				type: 'postback',
@@ -575,17 +575,17 @@ function sendButton(senderId,reg) {
 	if (reg == 1) {
 		client.sendButtonTemplate(senderId, 'Gửi ảnh thành công. Bạn có muốn tiếp tục gửi ảnh không?', [{
 			type: 'web_url',
-			url: 'https://botjapan.herokuapp.com/iproducts.html?psid=' + senderId,
+			url: 'https://sirhieu.herokuapp.com/iproducts.html?psid=' + senderId,
 			messenger_extensions: true,
 			webview_height_ratio: 'tall',
-			fallback_url: 'https://botjapan.herokuapp.com/iproducts.html?psid=' + senderId,
+			fallback_url: 'https://sirhieu.herokuapp.com/iproducts.html?psid=' + senderId,
 			title: 'Gửi ảnh',
 		}, {
 			type: 'web_url',
-			url: 'https://botjapan.herokuapp.com/qla.html?psid=' + senderId,
+			url: 'https://sirhieu.herokuapp.com/qla.html?psid=' + senderId,
 			messenger_extensions: true,
 			webview_height_ratio: 'tall',
-			fallback_url: 'https://botjapan.herokuapp.com/qla.html?psid=' + senderId,
+			fallback_url: 'https://sirhieu.herokuapp.com/qla.html?psid=' + senderId,
 			title: 'Quản lý ảnh',
 		}, {
 			type: 'postback',
@@ -596,10 +596,10 @@ function sendButton(senderId,reg) {
 		client.close();
 		client.sendButtonTemplate(senderId, 'Bạn chưa đăng ký dự thi. Bạn có muốn đăng ký không?', [{
 			type: 'web_url',
-			url: 'https://botjapan.herokuapp.com/register.html?psid=' + senderId,
+			url: 'https://sirhieu.herokuapp.com/register.html?psid=' + senderId,
 			messenger_extensions: true,
 			webview_height_ratio: 'tall',
-			fallback_url: 'https://botjapan.herokuapp.com/register.html?psid=' + senderId,
+			fallback_url: 'https://sirhieu.herokuapp.com/register.html?psid=' + senderId,
 			title: 'Đăng ký',
 		}, ]);
 	};*/
@@ -619,7 +619,7 @@ function writeFileProduct(fileName, data, newPath, psid, callback) {
 			} else {
 
 				console.log('File is uploaded :', newPath + "/" + fileName);
-				var link = newPath.replace('/app/public', 'https://botjapan.herokuapp.com') + "/" + fileName;
+				var link = newPath.replace('/app/public', 'https://sirhieu.herokuapp.com') + "/" + fileName;
 				cloudinary.v2.uploader.upload(link, {
 						public_id: "VJ/" + fileName.replace('.', '')
 					},
@@ -684,7 +684,7 @@ function receivedMessage(event) {
 			case 'MENU':
 				/*client.sendButtonTemplate(senderID, 'What do you want to do next?', [{
 					type: 'web_url',
-					url: 'https://botjapan.herokuapp.com/images/nb.jpg',
+					url: 'https://sirhieu.herokuapp.com/images/nb.jpg',
 					title: 'Show Website',
 				}, {
 					type: 'postback',
@@ -699,15 +699,15 @@ function receivedMessage(event) {
 				client.sendGenericTemplate(
 					senderID, [{
 						title: 'THÔNG TIN',
-						image_url: 'https://botjapan.herokuapp.com/images/tt.jpg',
+						image_url: 'https://sirhieu.herokuapp.com/images/tt.jpg',
 						subtitle: 'Thông tin cuộc thi',
 						default_action: {
 							type: 'web_url',
-							url: 'https://botjapan.herokuapp.com/images/tt.jpg',
+							url: 'https://sirhieu.herokuapp.com/images/tt.jpg',
 							messenger_extensions: true,
 							webview_height_ratio: 'tall',
 							fallback_url: '',
-							/*'https://botjapan.herokuapp.com/',*/
+							/*'https://sirhieu.herokuapp.com/',*/
 						},
 						buttons: [{
 							type: 'postback',
@@ -720,64 +720,64 @@ function receivedMessage(event) {
 						}, ],
 					}, {
 						title: 'GỬI BÀI THI',
-						image_url: 'https://botjapan.herokuapp.com/images/gb.jpg',
+						image_url: 'https://sirhieu.herokuapp.com/images/gb.jpg',
 						subtitle: 'Gửi ảnh dự thi',
 						default_action: {
 							type: 'web_url',
-							url: 'https://botjapan.herokuapp.com/images/gb.jpg',
+							url: 'https://sirhieu.herokuapp.com/images/gb.jpg',
 							messenger_extensions: true,
 							webview_height_ratio: 'tall',
 							fallback_url: '',
-							/*'https://botjapan.herokuapp.com/',*/
+							/*'https://sirhieu.herokuapp.com/',*/
 						},
 						buttons: [{
 							title: 'Đăng ký',
 							type: 'web_url',
-							url: 'https://botjapan.herokuapp.com/register.html?psid=' + senderID,
+							url: 'https://sirhieu.herokuapp.com/register.html?psid=' + senderID,
 							messenger_extensions: true,
 							webview_height_ratio: 'tall',
-							fallback_url: 'https://botjapan.herokuapp.com/register.html?psid=' + senderID,
+							fallback_url: 'https://sirhieu.herokuapp.com/register.html?psid=' + senderID,
 						}, {
 							title: 'Gửi ảnh',
 							type: 'web_url',
-							url: 'https://botjapan.herokuapp.com/iproducts.html?psid=' + senderID,
+							url: 'https://sirhieu.herokuapp.com/iproducts.html?psid=' + senderID,
 							messenger_extensions: true,
 							webview_height_ratio: 'tall',
-							fallback_url: 'https://botjapan.herokuapp.com/iproducts.html?psid=' + senderID,
+							fallback_url: 'https://sirhieu.herokuapp.com/iproducts.html?psid=' + senderID,
 						}, {
 							title: 'Quản lý ảnh',
 							type: 'web_url',
-							url: 'https://botjapan.herokuapp.com/qla.html?psid=' + senderID,
+							url: 'https://sirhieu.herokuapp.com/qla.html?psid=' + senderID,
 							messenger_extensions: true,
 							webview_height_ratio: 'tall',
-							fallback_url: 'https://botjapan.herokuapp.com/qla.html?psid=' + senderID,
+							fallback_url: 'https://sirhieu.herokuapp.com/qla.html?psid=' + senderID,
 						}, ],
 					}, {
 						title: 'BÌNH CHỌN',
-						image_url: 'https://botjapan.herokuapp.com/images/bc.jpg',
+						image_url: 'https://sirhieu.herokuapp.com/images/bc.jpg',
 						subtitle: 'Bình chọn ảnh đẹp',
 						default_action: {
 							type: 'web_url',
-							url: 'https://botjapan.herokuapp.com/images/bc.jpg',
+							url: 'https://sirhieu.herokuapp.com/images/bc.jpg',
 							messenger_extensions: true,
 							webview_height_ratio: 'tall',
 							fallback_url: '',
-							/*'https://botjapan.herokuapp.com/',*/
+							/*'https://sirhieu.herokuapp.com/',*/
 						},
 						buttons: [{
 							title: 'Bình chọn',
 							type: 'web_url',
-							url: 'https://botjapan.herokuapp.com/vote.html?psid=' + senderID,
+							url: 'https://sirhieu.herokuapp.com/vote.html?psid=' + senderID,
 							messenger_extensions: true,
 							webview_height_ratio: 'tall',
-							fallback_url: 'https://botjapan.herokuapp.com/vote.html?psid=' + senderID,
+							fallback_url: 'https://sirhieu.herokuapp.com/vote.html?psid=' + senderID,
 						}, {
 							title: 'Bảng xếp hạng',
 							type: 'web_url',
-							url: 'https://botjapan.herokuapp.com/ranktbl.html?psid=' + senderID,
+							url: 'https://sirhieu.herokuapp.com/ranktbl.html?psid=' + senderID,
 							messenger_extensions: true,
 							webview_height_ratio: 'tall',
-							fallback_url: 'https://botjapan.herokuapp.com/ranktbl.html?psid=' + senderID,
+							fallback_url: 'https://sirhieu.herokuapp.com/ranktbl.html?psid=' + senderID,
 						}, ],
 					}, ], {
 						image_aspect_ratio: 'square'
