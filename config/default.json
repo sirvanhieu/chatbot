@@ -1,7 +1,8 @@
 {
-	"appSecret": "3191e68808ba1ee4bf9bf14ce4faeccd",	"pageAccessToken":"EAAIeXV0sVjEBAIrN2GpYB1ZCFRK9XG3K0wC4R4yf0QsK9SbXG0Qkv8rInRNKE3FJ3uMNZCD3cbIxZAQQ0ZB2dRFwteYk6jfddv7840s6Mlx3BBURQWYEddBP4GZBeILWQsP4l1ZCuCNoDhzZCfwNqCBiMi7ZCzKtwGtiASokb9vOsQZDZD",
+	"appSecret": "aa721c89c008343c3e2ba1d4e7f6181d",	
+	"pageAccessToken":"EAADZCqgZBsetQBAACjzsZCk0QyCjegb3gh6DrSQ3sU0vLdbkl1iTiiRTeLdzZCvZAxUZCzJAWp5AQoEj4xCW5AFFY0jowP52virXhqZAZAMNVEII0umey9lkuU3plltx0YQWWP8CQny91LZAZADbLQwYJPYEWjdJk2z8dUNICwZAfTBFAZDZD",
 	"validationToken": "verify-token-ff",
-	"serverURL": "https://botjapan.herokuapp.com",
+	"serverURL": "https://sirhieu.herokuapp.com",
 	"mongoUrl":"mongodb://nosavnnet:nsvn6688@nosavn.net:27018/Nosa_Write_About_Teachers",
   	"databasename": "Nosa_Write_About_Teachers",
 	"image_cloud_name":"dv82g1c1i",
